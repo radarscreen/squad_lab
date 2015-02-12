@@ -30,7 +30,7 @@ Your students table should have a foreign key that links it to the squads table.
 
 ##### Your app should have the following `GET` routes.
 
-`/` - this is your root route and since there is anothing here, you can simply add this code in your `app.rb` so that it redirects to a route with an erb page.
+`/` - this is your root route and since there is nothing here, you can simply add this code to your `app.rb` so that it redirects to a route with an erb page.
 
 ```
 get '/' do
