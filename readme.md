@@ -50,9 +50,9 @@ end
 
 `/squads/:squad_id/students/:student_id` - this route should take the user to a page that shows information about an individual student in a squad
 
-`/squads/:squad_id/students/new` - this route should take the user to a page that shows all of the squads
+`/squads/:squad_id/students/new` - this route should take the user to a page that allows them to create a new student within a squad
 
-`/squads/:squad_id/students/:student_id/edit` - this route should take the user to a page that shows all of the squads
+`/squads/:squad_id/students/:student_id/edit` - this route should take the user to a page that allows them to edit a student's information
 
 ##### Your app should have the following `POST` routes.
 
