@@ -50,27 +50,27 @@ end
 
 `/squads/:squad_id/students/:student_id` - this route should take the user to a page that shows information about an individual student in a squad
 
-`/squads/:squad_id/students/new` - this route should take the user to a page that allows them to create a new student within a squad
+`/squads/:squad_id/students/new` - this route should take the user to a page that shows them a form to create a new student
 
-`/squads/:squad_id/students/:student_id/edit` - this route should take the user to a page that allows them to edit a student's information
+`/squads/:squad_id/students/:student_id/edit` - this route should take the user to a page that shows them a form to edit a student's information
 
 ##### Your app should have the following `POST` routes.
 
-`/squads` - this route should used for creating a new squad
+`/squads` - this route should be used for creating a new squad
 
-`/squads/:squad_id/students` - this route should used for creating a new student in an existing squad
+`/squads/:squad_id/students` - this route should be used for creating a new student in an existing squad
 
 ##### Your app should have the following `PUT` routes.
 
-`/squads` - this route should used for editing an existing squad
+`/squads` - this route should be used for editing an existing squad
 
-`/squads/:squad_id/students` - this route should used for editing an existing student in a squad
+`/squads/:squad_id/students` - this route should be used for editing an existing student in a squad
 
 ##### Your app should have the following `DELETE` routes.
 
-`/squads` - this route should used for deleting an existing squad
+`/squads` - this route should be used for deleting an existing squad
 
-`/squads/:squad_id/students` - this route should used for editing an existing student in a squad
+`/squads/:squad_id/students` - this route should be used for editing an existing student in a squad
 
 
 ### Bonus
