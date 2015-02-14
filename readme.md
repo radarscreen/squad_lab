@@ -62,15 +62,15 @@ end
 
 ##### Your app should have the following `PUT` routes.
 
-`/squads` - this route should be used for editing an existing squad
+`/squads/:squad_id` - this route should be used for editing an existing squad
 
 `/squads/:squad_id/students` - this route should be used for editing an existing student in a squad
 
 ##### Your app should have the following `DELETE` routes.
 
-`/squads` - this route should be used for deleting an existing squad
+`/squads/:squad_id` - this route should be used for deleting an existing squad
 
-`/squads/:squad_id/students` - this route should be used for editing an existing student in a squad
+`/squads/:squad_id/students/:student_id` - this route should be used for editing an existing student in a squad
 
 
 ### Bonus
