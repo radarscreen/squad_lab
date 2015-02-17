@@ -9,18 +9,20 @@
     </tr>
   </thead>
   <tbody>
-<% @squads.each do |squad|  %>
-  <tr>
-    <td><%= squad["name"] %></td>
-    <td><%= squad["mascot"] %></td>
-    <td><a href="/squads/<%= squad["id"]%>">Here</a></td>
-  </tr>
-<% end %>
-</tbody>
+    <% @squads.each do |squad|  %>
+      <tr>
+        <td><%= squad["name"] %></td>
+        <td><%= squad["mascot"] %></td>
+        <td><a href="/squads/<%= squad["id"]%>">Here</a></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
+
+<a href="/squads/new">Add a new squad!</a>
 <%= erb :'partials/_footer' %>
 
-  <a href="/squads/new">Add a new squad!</a>
+
 
 
 
