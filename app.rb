@@ -70,8 +70,8 @@ end
 
 delete '/squads/:id' do
   id = params[:id].to_i
-  @conn.exec('DELETE FROM squads WHERE id = $1', [ id ] )
   @conn.exec('DELETE FROM students WHERE squad_id = $1', [ id ] )
+  @conn.exec('DELETE FROM squads WHERE id = $1', [ id ] )
   redirect '/squads'
 end
 
