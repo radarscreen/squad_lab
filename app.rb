@@ -95,17 +95,15 @@ get '/squads/:squad_id/students/new' do
 end
 
 get '/squads/:squad_id/students/:student_id' do
-  squad_id = params[:squad_id].to_i
   id = params[:student_id].to_i
-  student = @conn.exec('SELECT * FROM students WHERE id = $1 AND squad_id = $2', [ id, squad_id ] )
+  student = @conn.exec('SELECT * FROM students WHERE id = $1', [ id ] )
   @student = student[0]
   erb :'students/show'
 end
 
 get '/squads/:squad_id/students/:student_id/edit' do
-  squad_id = params[:squad_id].to_i
   id = params[:student_id].to_i
-  student = @conn.exec('SELECT * FROM students WHERE id = $1 AND squad_id = $2', [ id, squad_id ] )
+  student = @conn.exec('SELECT * FROM students WHERE id = $1', [ id] )
   @student = student[0]
   erb :'students/edit'
 end
